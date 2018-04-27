@@ -17,6 +17,7 @@ case input
     puts "Would you like to play  again?"
   when "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O")).play
+    puts "Would you like to play again?"
   else
     puts "That is an invalid entry"
     start
