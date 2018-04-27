@@ -19,7 +19,7 @@ module Players
       #returns position 5 if open
         open.include?(4) ? "5" : "#{best_move + 1}" #takes best move index and converts to position string
       else
-        binding.pry
+
         open.first + 1
       end
 
