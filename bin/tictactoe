@@ -11,7 +11,10 @@ case input
   when "0"
     Game.new(Players::Computer.new("X"), Players::Computer.new("O")).play
     puts "Would you like to play again?"
-    new_game
+
+  when "1"
+    Game.new(Players::Human.new("X"), Players::Computer.new("O")).play
+    puts "Would you like to play  again?"
   else
     puts "That is an invalid entry"
     start
