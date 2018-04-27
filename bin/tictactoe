@@ -32,6 +32,13 @@ def new_game
   input = gets.strip.downcase
 
   case input
-  when
-
+  when 'y'
+    start 
+  when 'n'
+    puts "Thanks for playing! Goodbye!"
+  else 
+    new_game 
+  end 
 end
+
+start 
