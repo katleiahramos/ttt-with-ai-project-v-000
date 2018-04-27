@@ -33,12 +33,13 @@ def new_game
 
   case input
   when 'y'
-    start 
+    start
   when 'n'
     puts "Thanks for playing! Goodbye!"
-  else 
-    new_game 
-  end 
+  else
+    new_game
+  end
 end
 
-start 
+
+start
