@@ -8,6 +8,7 @@ module Players
       open = []
 
       board.cells.each_with_index {|cell, index|
+        binding.pry
         open << index if cell == " "
       }
 
